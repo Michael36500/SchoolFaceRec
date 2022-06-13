@@ -3,6 +3,16 @@ import cv2
 import numpy as np
 import def_load as load
 import random as rn
+import time
+
+Start = time.time()
+
+def time_convert(sec):
+    mins = sec // 60
+    sec = sec % 60
+    hours = mins // 60
+    mins = mins % 60
+    print("Time Lapsed = {0}:{1}:{2}".format(int(hours),int(mins),sec))
 
 # This is a demo of running face recognition on live video from your webcam. It's a little more complicated than the
 # other example, but it includes some basic performance tweaks to make things run a lot faster:
@@ -15,16 +25,16 @@ import random as rn
 
 # Get a reference to webcam #0 (the default one)
 print("GO!")
-# for a in range(10):
-#     print("trying", a)
-#     video_capture = cv2.VideoCapture(a, cv2.CAP_DSHOW)
-#     ret, frame = video_capture.read()
-#     print(ret)
-#     if ret == True:
-#         break
-#     else:
-#         video_capture.release()
-video_capture = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+for a in range(10):
+    print("trying", a)
+    video_capture = cv2.VideoCapture(a, cv2.CAP_DSHOW)
+    ret, frame = video_capture.read()
+    print(ret)
+    if ret == True:
+        break
+    else:
+        video_capture.release()
+# video_capture = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
 
 
@@ -35,7 +45,6 @@ print("video captured")
 # Load a sample picture and learn how to recognize it.
 
 
-IIB8PolednovaSofie = load.img("faces/IIB8PolednovaSofie.png")
 IIIB8AmbrosMichael = load.img("faces/IIIB8AmbrosMichael.png")
 IIIB8AxmanovaPavlina = load.img("faces/IIIB8AxmanovaPavlina.png")
 IIIB8BuresEBenjamin = load.img("faces/IIIB8BuresEBenjamin.png")
@@ -53,6 +62,7 @@ IIIB8LazarovaSofie = load.img("faces/IIIB8LazarovaSofie.png")
 IIIB8MadrovaGabriela = load.img("faces/IIIB8MadrovaGabriela.png")
 IIIB8PaulickovaTereza = load.img("faces/IIIB8PaulickovaTereza.png")
 IIIB8PetrivalskyNil = load.img("faces/IIIB8PetrivalskyNil.png")
+IIIB8PolednovaSofie = load.img("faces/IIIB8PolednovaSofie.png")
 IIIB8RatajovaTerezie = load.img("faces/IIIB8RatajovaTerezie.png")
 IIIB8SaradinMatej = load.img("faces/IIIB8SaradinMatej.png")
 IIIB8SimackovaMEmma = load.img("faces/IIIB8SimackovaMEmma.png")
@@ -64,14 +74,15 @@ IIIB8TomeckovaAnna = load.img("faces/IIIB8TomeckovaAnna.png")
 IIIB8VaclavikovaAnna = load.img("faces/IIIB8VaclavikovaAnna.png")
 IIIB8VeseckyJakub = load.img("faces/IIIB8VeseckyJakub.png")
 IIIB8ZidkovaLinda = load.img("faces/IIIB8ZidkovaLinda.png")
+
 print("pictures loaded")
 
-known_face_encodings = [IIB8PolednovaSofie, IIIB8AmbrosMichael, IIIB8AxmanovaPavlina, IIIB8BuresEBenjamin, IIIB8CoufalovaNoemi, IIIB8DolezalovaHelena, IIIB8HavrlantSimon, IIIB8HimrJonas, IIIB8HockadaySMatthew, IIIB8HoudekJan, IIIB8JuraskovaAneta, IIIB8KlimkovaViola, IIIB8KolarJan, IIIB8KonecnyPetr, IIIB8LazarovaSofie, IIIB8MadrovaGabriela, IIIB8PaulickovaTereza, IIIB8PetrivalskyNil, IIIB8RatajovaTerezie, IIIB8SaradinMatej, IIIB8SimackovaMEmma, IIIB8SitovaHana, IIIB8SmutnaHana, IIIB8StefanovaAnna, IIIB8StyblovaTatiana, IIIB8TomeckovaAnna, IIIB8VaclavikovaAnna, IIIB8VeseckyJakub, IIIB8ZidkovaLinda]
-known_face_names = ['IIB8PolednovaSofie', 'IIIB8AmbrosMichael', 'IIIB8AxmanovaPavlina', 'IIIB8BuresEBenjamin', 'IIIB8CoufalovaNoemi', 'IIIB8DolezalovaHelena', 'IIIB8HavrlantSimon', 'IIIB8HimrJonas', 'IIIB8HockadaySMatthew', 'IIIB8HoudekJan', 'IIIB8JuraskovaAneta', 'IIIB8KlimkovaViola', 'IIIB8KolarJan', 'IIIB8KonecnyPetr', 'IIIB8LazarovaSofie', 'IIIB8MadrovaGabriela', 'IIIB8PaulickovaTereza', 'IIIB8PetrivalskyNil', 'IIIB8RatajovaTerezie', 'IIIB8SaradinMatej', 'IIIB8SimackovaMEmma', 'IIIB8SitovaHana', 'IIIB8SmutnaHana', 'IIIB8StefanovaAnna', 'IIIB8StyblovaTatiana', 'IIIB8TomeckovaAnna', 'IIIB8VaclavikovaAnna', 'IIIB8VeseckyJakub', 'IIIB8ZidkovaLinda']
+known_face_encodings = [IIIB8PolednovaSofie, IIIB8AmbrosMichael, IIIB8AxmanovaPavlina, IIIB8BuresEBenjamin, IIIB8CoufalovaNoemi, IIIB8DolezalovaHelena, IIIB8HavrlantSimon, IIIB8HimrJonas, IIIB8HockadaySMatthew, IIIB8HoudekJan, IIIB8JuraskovaAneta, IIIB8KlimkovaViola, IIIB8KolarJan, IIIB8KonecnyPetr, IIIB8LazarovaSofie, IIIB8MadrovaGabriela, IIIB8PaulickovaTereza, IIIB8PetrivalskyNil, IIIB8RatajovaTerezie, IIIB8SaradinMatej, IIIB8SimackovaMEmma, IIIB8SitovaHana, IIIB8SmutnaHana, IIIB8StefanovaAnna, IIIB8StyblovaTatiana, IIIB8TomeckovaAnna, IIIB8VaclavikovaAnna, IIIB8VeseckyJakub, IIIB8ZidkovaLinda]
+known_face_names = ['IIIB8PolednovaSofie', 'IIIB8AmbrosMichael', 'IIIB8AxmanovaPavlina', 'IIIB8BuresEBenjamin', 'IIIB8CoufalovaNoemi', 'IIIB8DolezalovaHelena', 'IIIB8HavrlantSimon', 'IIIB8HimrJonas', 'IIIB8HockadaySMatthew', 'IIIB8HoudekJan', 'IIIB8JuraskovaAneta', 'IIIB8KlimkovaViola', 'IIIB8KolarJan', 'IIIB8KonecnyPetr', 'IIIB8LazarovaSofie', 'IIIB8MadrovaGabriela', 'IIIB8PaulickovaTereza', 'IIIB8PetrivalskyNil', 'IIIB8RatajovaTerezie', 'IIIB8SaradinMatej', 'IIIB8SimackovaMEmma', 'IIIB8SitovaHana', 'IIIB8SmutnaHana', 'IIIB8StefanovaAnna', 'IIIB8StyblovaTatiana', 'IIIB8TomeckovaAnna', 'IIIB8VaclavikovaAnna', 'IIIB8VeseckyJakub', 'IIIB8ZidkovaLinda']
 
-
-
+print(time.time() - Start)
 # Initialize some variables
+multipl = 2;
 face_locations = []
 face_encodings = []
 face_names = []
@@ -127,18 +138,18 @@ while True:
         # right *= 4
         # bottom *= 4
         # left *= 4
-        top *= 2
-        right *= 2
-        bottom *= 2
-        left *= 2
+        top *= multipl
+        right *= multipl
+        bottom *= multipl
+        left *= multipl
 
         # Draw a box around the face
-        cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
+        cv2.rectangle(frame, (left, top), (right, bottom), (255, 0, 0), 2)
 
         # Draw a label with a name below the face
-        cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 0, 255), cv2.FILLED)
+        cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (255, 0, 0), cv2.FILLED)
         font = cv2.FONT_HERSHEY_DUPLEX
-        cv2.putText(frame, name, (left + 6, bottom - 6), font, 0.75, (255, 255, 255), 1)
+        cv2.putText(frame, name, (left + 6, bottom - 6), font, 0.75, (0, 0, 255 ), 1)
 
     # Display the resulting image
     cv2.imshow('Video', frame)

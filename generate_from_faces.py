@@ -3,13 +3,26 @@ import pyperclip
 import time
 
 Sleep = 1
+trida = "faces"
+trida_f = trida + ".png"
+where = trida + "/"
 
-Files = os.listdir("faces/ucitele/")
+Files = os.listdir(where)
 Names = []
 Out = ""
+loop = 0
 
 for File in Files:
-    Path = "faces/ucitele/" + File
+    loop = loop + 1
+    # print(len(File))
+    # if trida_f in File:
+    if len(File) < 10:
+        # print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+        continue
+    if "X" in File:
+        # print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        continue
+    Path = where + File
     # print(Path)
     Name = File[:-1]
     Name = Name[:-1]
@@ -17,14 +30,14 @@ for File in Files:
     Name = Name[:-1]
     Names.append(Name)
 
-    Full = '{} = load.img("{}")'.format(Name, Path)
+    Full = '{} = img("{}")'.format(Name, Path)
 
     Out = Out + "\n" + Full
-pyperclip.copy(Out)
-time.sleep(Sleep)
-print(Out)
-print()
-print()
+# pyperclip.copy(Out)
+# time.sleep(Sleep)
+# print(Out)
+# print()
+# print()
 
 
 
@@ -33,13 +46,17 @@ known_fn = "known_face_names = {}".format(Names)
 known_fe = "known_face_encodings = {}".format(Names)
 known_fe = known_fe.replace("'", "")
 
-pyperclip.copy(known_fe)
-time.sleep(Sleep)
-print(known_fe)
-print()
-print()
-pyperclip.copy(known_fn)
-time.sleep(Sleep)
-print(known_fn)
+# pyperclip.copy(known_fe)
+# time.sleep(Sleep)
+# print(known_fe)
+# print()
+# print()
+# pyperclip.copy(known_fn)
+# time.sleep(Sleep)
+# print(known_fn)
 
+final = Out + "\n" + known_fe + "\n" + known_fn
+print(final)
+pyperclip.copy(final)
 
+print(loop)
