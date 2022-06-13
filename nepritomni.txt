@@ -25,3 +25,5 @@ IIC6VachalovaLucie
 IIIA6HabermannovaNela
 IIIA6NovakovaZuzana
 IIIA6SlezkovaEmma
+IVA8KorhonVojtech
+IVA8SikorovaEditay

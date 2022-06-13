@@ -3,7 +3,7 @@ import pyperclip
 import time
 
 Sleep = 1
-trida = "faces"
+trida = "IVA8"
 trida_f = trida + ".png"
 where = trida + "/"
 
@@ -59,4 +59,4 @@ final = Out + "\n" + known_fe + "\n" + known_fn
 print(final)
 pyperclip.copy(final)
 
-print(loop)
+print(loop - 1)
