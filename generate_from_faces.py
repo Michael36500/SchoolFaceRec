@@ -3,7 +3,7 @@ import pyperclip
 import time
 
 Sleep = 1
-trida = "faces"
+trida = "IIIB6"
 trida_f = trida + ".png"
 where = trida + "/"
 

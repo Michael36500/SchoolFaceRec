@@ -71,8 +71,39 @@ print("video captured")
 # Load a sample picture and learn how to recognize it.
 
 
-IIIB
 
+
+
+
+BognarovaJulie = img("IIIB6/BognarovaJulie.png")
+CvetanRobert = img("IIIB6/CvetanRobert.png")
+CvrckovaEliska = img("IIIB6/CvrckovaEliska.png")
+HamplovaAnna = img("IIIB6/HamplovaAnna.png")
+HanykTomas = img("IIIB6/HanykTomas.png")
+HejdukovaLeona = img("IIIB6/HejdukovaLeona.png")
+HrdlickaAdam = img("IIIB6/HrdlickaAdam.png")
+JarosovaAdriana = img("IIIB6/JarosovaAdriana.png")
+KorinkovaTana = img("IIIB6/KorinkovaTana.png")
+LatalovaNatalie = img("IIIB6/LatalovaNatalie.png")
+MistaMatous = img("IIIB6/MistaMatous.png")
+NovotnaAgata = img("IIIB6/NovotnaAgata.png")
+PiechovaJulie = img("IIIB6/PiechovaJulie.png")
+PisoftovaEva = img("IIIB6/PisoftovaEva.png")
+PivodovaKaterina = img("IIIB6/PivodovaKaterina.png")
+RuzickovaEma = img("IIIB6/RuzickovaEma.png")
+SedlakOndrej = img("IIIB6/SedlakOndrej.png")
+SeluckaBarbora = img("IIIB6/SeluckaBarbora.png")
+SmekalMartin = img("IIIB6/SmekalMartin.png")
+SowaJakub = img("IIIB6/SowaJakub.png")
+SpacekJakub = img("IIIB6/SpacekJakub.png")
+SpertlikvoaVeronika = img("IIIB6/SpertlikvoaVeronika.png")
+TelcovaKlara = img("IIIB6/TelcovaKlara.png")
+ValentaAdam = img("IIIB6/ValentaAdam.png")
+VranovaMarina = img("IIIB6/VranovaMarina.png")
+VyslouzilovaElena = img("IIIB6/VyslouzilovaElena.png")
+ZizlavskaAmelie = img("IIIB6/ZizlavskaAmelie.png")
+known_face_encodings = [BognarovaJulie, CvetanRobert, CvrckovaEliska, HamplovaAnna, HanykTomas, HejdukovaLeona, HrdlickaAdam, JarosovaAdriana, KorinkovaTana, LatalovaNatalie, MistaMatous, NovotnaAgata, PiechovaJulie, PisoftovaEva, PivodovaKaterina, RuzickovaEma, SedlakOndrej, SeluckaBarbora, SmekalMartin, SowaJakub, SpacekJakub, SpertlikvoaVeronika, TelcovaKlara, ValentaAdam, VranovaMarina, VyslouzilovaElena, ZizlavskaAmelie]
+known_face_names = ['BognarovaJulie', 'CvetanRobert', 'CvrckovaEliska', 'HamplovaAnna', 'HanykTomas', 'HejdukovaLeona', 'HrdlickaAdam', 'JarosovaAdriana', 'KorinkovaTana', 'LatalovaNatalie', 'MistaMatous', 'NovotnaAgata', 'PiechovaJulie', 'PisoftovaEva', 'PivodovaKaterina', 'RuzickovaEma', 'SedlakOndrej', 'SeluckaBarbora', 'SmekalMartin', 'SowaJakub', 'SpacekJakub', 'SpertlikvoaVeronika', 'TelcovaKlara', 'ValentaAdam', 'VranovaMarina', 'VyslouzilovaElena', 'ZizlavskaAmelie']
 
 
 
