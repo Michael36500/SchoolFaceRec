@@ -75,6 +75,35 @@ print("video captured")
 
 
 
+BognarovaJulie = img("IIIB6/BognarovaJulie.png")
+CvetanRobert = img("IIIB6/CvetanRobert.png")
+CvrckovaEliska = img("IIIB6/CvrckovaEliska.png")
+HamplovaAnna = img("IIIB6/HamplovaAnna.png")
+HanykTomas = img("IIIB6/HanykTomas.png")
+HejdukovaLeona = img("IIIB6/HejdukovaLeona.png")
+HrdlickaAdam = img("IIIB6/HrdlickaAdam.png")
+JarosovaAdriana = img("IIIB6/JarosovaAdriana.png")
+KorinkovaTana = img("IIIB6/KorinkovaTana.png")
+LatalovaNatalie = img("IIIB6/LatalovaNatalie.png")
+MistaMatous = img("IIIB6/MistaMatous.png")
+NovotnaAgata = img("IIIB6/NovotnaAgata.png")
+PiechovaJulie = img("IIIB6/PiechovaJulie.png")
+PisoftovaEva = img("IIIB6/PisoftovaEva.png")
+PivodovaKaterina = img("IIIB6/PivodovaKaterina.png")
+RuzickovaEma = img("IIIB6/RuzickovaEma.png")
+SedlakOndrej = img("IIIB6/SedlakOndrej.png")
+SeluckaBarbora = img("IIIB6/SeluckaBarbora.png")
+SmekalMartin = img("IIIB6/SmekalMartin.png")
+SowaJakub = img("IIIB6/SowaJakub.png")
+SpacekJakub = img("IIIB6/SpacekJakub.png")
+SpertlikvoaVeronika = img("IIIB6/SpertlikvoaVeronika.png")
+TelcovaKlara = img("IIIB6/TelcovaKlara.png")
+ValentaAdam = img("IIIB6/ValentaAdam.png")
+VranovaMarina = img("IIIB6/VranovaMarina.png")
+VyslouzilovaElena = img("IIIB6/VyslouzilovaElena.png")
+ZizlavskaAmelie = img("IIIB6/ZizlavskaAmelie.png")
+known_face_encodings = [BognarovaJulie, CvetanRobert, CvrckovaEliska, HamplovaAnna, HanykTomas, HejdukovaLeona, HrdlickaAdam, JarosovaAdriana, KorinkovaTana, LatalovaNatalie, MistaMatous, NovotnaAgata, PiechovaJulie, PisoftovaEva, PivodovaKaterina, RuzickovaEma, SedlakOndrej, SeluckaBarbora, SmekalMartin, SowaJakub, SpacekJakub, SpertlikvoaVeronika, TelcovaKlara, ValentaAdam, VranovaMarina, VyslouzilovaElena, ZizlavskaAmelie]
+known_face_names = ['BognarovaJulie', 'CvetanRobert', 'CvrckovaEliska', 'HamplovaAnna', 'HanykTomas', 'HejdukovaLeona', 'HrdlickaAdam', 'JarosovaAdriana', 'KorinkovaTana', 'LatalovaNatalie', 'MistaMatous', 'NovotnaAgata', 'PiechovaJulie', 'PisoftovaEva', 'PivodovaKaterina', 'RuzickovaEma', 'SedlakOndrej', 'SeluckaBarbora', 'SmekalMartin', 'SowaJakub', 'SpacekJakub', 'SpertlikvoaVeronika', 'TelcovaKlara', 'ValentaAdam', 'VranovaMarina', 'VyslouzilovaElena', 'ZizlavskaAmelie']
 
 
 
@@ -91,34 +120,7 @@ print("video captured")
 
 
 
-IVA8BouchalMarek = img("IVA8/IVA8BouchalMarek.png")
-IVA8BrozdaAdam = img("IVA8/IVA8BrozdaAdam.png")
-IVA8CanibalFilip = img("IVA8/IVA8CanibalFilip.png")
-IVA8CoufalovaJudita = img("IVA8/IVA8CoufalovaJudita.png")
-IVA8DvorskyMichal = img("IVA8/IVA8DvorskyMichal.png")
-IVA8GeprtovaMartina = img("IVA8/IVA8GeprtovaMartina.png")
-IVA8HalasVaclav = img("IVA8/IVA8HalasVaclav.png")
-IVA8JuraMarek = img("IVA8/IVA8JuraMarek.png")
-IVA8KaresVit = img("IVA8/IVA8KaresVit.png")
-IVA8KlimcakovaAnna = img("IVA8/IVA8KlimcakovaAnna.png")
-IVA8KoupilFlorian = img("IVA8/IVA8KoupilFlorian.png")
-IVA8KovarikVojtech = img("IVA8/IVA8KovarikVojtech.png")
-IVA8KurfurstAdam = img("IVA8/IVA8KurfurstAdam.png")
-IVA8LosseovaMarie = img("IVA8/IVA8LosseovaMarie.png")
-IVA8MohaplTomas = img("IVA8/IVA8MohaplTomas.png")
-IVA8NavratilovaAmelie = img("IVA8/IVA8NavratilovaAmelie.png")
-IVA8NiemiecJiri = img("IVA8/IVA8NiemiecJiri.png")
-IVA8PippalNikolas = img("IVA8/IVA8PippalNikolas.png")
-IVA8PospisilovaAnezka = img("IVA8/IVA8PospisilovaAnezka.png")
-IVA8ProchazkaJosef = img("IVA8/IVA8ProchazkaJosef.png")
-IVA8ProchazkovaAnezka = img("IVA8/IVA8ProchazkovaAnezka.png")
-IVA8PuskasJSamuel = img("IVA8/IVA8PuskasJSamuel.png")
-IVA8SrotovaLucie = img("IVA8/IVA8SrotovaLucie.png")
-IVA8VanekKarel = img("IVA8/IVA8VanekKarel.png")
-IVA8VortelJakub = img("IVA8/IVA8VortelJakub.png")
-IVA8ZimovaSKarolina = img("IVA8/IVA8ZimovaSKarolina.png")
-known_face_encodings = [IVA8BouchalMarek, IVA8BrozdaAdam, IVA8CanibalFilip, IVA8CoufalovaJudita, IVA8DvorskyMichal, IVA8GeprtovaMartina, IVA8HalasVaclav, IVA8JuraMarek, IVA8KaresVit, IVA8KlimcakovaAnna, IVA8KoupilFlorian, IVA8KovarikVojtech, IVA8KurfurstAdam, IVA8LosseovaMarie, IVA8MohaplTomas, IVA8NavratilovaAmelie, IVA8NiemiecJiri, IVA8PippalNikolas, IVA8PospisilovaAnezka, IVA8ProchazkaJosef, IVA8ProchazkovaAnezka, IVA8PuskasJSamuel, IVA8SrotovaLucie, IVA8VanekKarel, IVA8VortelJakub, IVA8ZimovaSKarolina]
-known_face_names = ['IVA8BouchalMarek', 'IVA8BrozdaAdam', 'IVA8CanibalFilip', 'IVA8CoufalovaJudita', 'IVA8DvorskyMichal', 'IVA8GeprtovaMartina', 'IVA8HalasVaclav', 'IVA8JuraMarek', 'IVA8KaresVit', 'IVA8KlimcakovaAnna', 'IVA8KoupilFlorian', 'IVA8KovarikVojtech', 'IVA8KurfurstAdam', 'IVA8LosseovaMarie', 'IVA8MohaplTomas', 'IVA8NavratilovaAmelie', 'IVA8NiemiecJiri', 'IVA8PippalNikolas', 'IVA8PospisilovaAnezka', 'IVA8ProchazkaJosef', 'IVA8ProchazkovaAnezka', 'IVA8PuskasJSamuel', 'IVA8SrotovaLucie', 'IVA8VanekKarel', 'IVA8VortelJakub', 'IVA8ZimovaSKarolina']
+
 
 
 print("pictures loaded")
