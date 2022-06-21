@@ -62,24 +62,15 @@ video_capture.release()
 
 
 
-IB8KlimcakRichard = img("faces/IB8KlimcakRichard.png")
-IB8LinekOndrej = img("faces/IB8LinekOndrej.png")
-IB8OndrouskovaTereza = img("faces/IB8OndrouskovaTereza.png")
-IB8ZavadilTomas = img("faces/IB8ZavadilTomas.png")
-IIA6DolezalovaElla = img("faces/IIA6DolezalovaElla.png")
+
+
+
 IIA8ProtivanekVojtech = img("faces/IIA8ProtivanekVojtech.png")
 IIA8ZubakSamuel = img("faces/IIA8ZubakSamuel.png")
-IIIA8HolasekTomas = img("faces/IIIA8HolasekTomas.png")
-IIIA8HrabalNikola = img("faces/IIIA8HrabalNikola.png")
-IIIA8JanosikLukas = img("faces/IIIA8JanosikLukas.png")
-IIIA8StavarskyRichard = img("faces/IIIA8StavarskyRichard.png")
-IVA8BrozdaAdam = img("faces/IVA8BrozdaAdam.png")
-IVA8KaresVit = img("faces/IVA8KaresVit.png")
-IVA8ProchazkaJosef = img("faces/IVA8ProchazkaJosef.png")
+IIIB8AmbrosMichael = img("faces/IIIB8AmbrosMichael.png")
 IVA8ProchazkovaAnezka = img("faces/IVA8ProchazkovaAnezka.png")
-KvapilMaFyHv = img("faces/KvapilMaFyHv.jpg")
-known_face_encodings = [IB8KlimcakRichard, IB8LinekOndrej, IB8OndrouskovaTereza, IB8ZavadilTomas, IIA6DolezalovaElla, IIA8ProtivanekVojtech, IIA8ZubakSamuel, IIIA8HolasekTomas, IIIA8HrabalNikola, IIIA8JanosikLukas, IIIA8StavarskyRichard, IVA8BrozdaAdam, IVA8KaresVit, IVA8ProchazkaJosef, IVA8ProchazkovaAnezka, KvapilMaFyHv]
-known_face_names = ['IB8KlimcakRichard', 'IB8LinekOndrej', 'IB8OndrouskovaTereza', 'IB8ZavadilTomas', 'IIA6DolezalovaElla', 'IIA8ProtivanekVojtech', 'IIA8ZubakSamuel', 'IIIA8HolasekTomas', 'IIIA8HrabalNikola', 'IIIA8JanosikLukas', 'IIIA8StavarskyRichard', 'IVA8BrozdaAdam', 'IVA8KaresVit', 'IVA8ProchazkaJosef', 'IVA8ProchazkovaAnezka', 'KvapilMaFyHv']
+known_face_encodings = [IIA8ProtivanekVojtech, IIA8ZubakSamuel, IIIB8AmbrosMichael, IVA8ProchazkovaAnezka]
+known_face_names = ['IIA8ProtivanekVojtech', 'IIA8ZubakSamuel', 'IIIB8AmbrosMichael', 'IVA8ProchazkovaAnezka']
 
 
 
