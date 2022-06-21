@@ -12,6 +12,7 @@ import face_recognition
 import cv2
 import numpy as np
 from scipy.misc import face
+act_face = 0
 
 def img(where):
     global total_faces
@@ -47,63 +48,13 @@ def time_convert(sec):
 
 # Get a reference to webcam #0 (the default one)
 print("GO!")
-for a in range(10):
-    print("trying", a)
-    video_capture = cv2.VideoCapture(a, cv2.CAP_DSHOW)
-    ret, frame = video_capture.read()
-    print(ret)
-    if ret == True:
-        break
-    else:
-        video_capture.release()
-video_capture.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
-video_capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
-total_faces = 452
-act_face = 0
-# video_capture = cv2.VideoCapture(0, cv2.CAP_DSHOW)
-
-
-
-
-print("video captured")
-# print(video_capture)
 
 # Load a sample picture and learn how to recognize it.
-
-
-
-
-
-
-BognarovaJulie = img("IIIB6/BognarovaJulie.png")
-CvetanRobert = img("IIIB6/CvetanRobert.png")
-CvrckovaEliska = img("IIIB6/CvrckovaEliska.png")
-HamplovaAnna = img("IIIB6/HamplovaAnna.png")
-HanykTomas = img("IIIB6/HanykTomas.png")
-HejdukovaLeona = img("IIIB6/HejdukovaLeona.png")
-HrdlickaAdam = img("IIIB6/HrdlickaAdam.png")
-JarosovaAdriana = img("IIIB6/JarosovaAdriana.png")
-KorinkovaTana = img("IIIB6/KorinkovaTana.png")
-LatalovaNatalie = img("IIIB6/LatalovaNatalie.png")
-MistaMatous = img("IIIB6/MistaMatous.png")
-NovotnaAgata = img("IIIB6/NovotnaAgata.png")
-PiechovaJulie = img("IIIB6/PiechovaJulie.png")
-PisoftovaEva = img("IIIB6/PisoftovaEva.png")
-PivodovaKaterina = img("IIIB6/PivodovaKaterina.png")
-RuzickovaEma = img("IIIB6/RuzickovaEma.png")
-SedlakOndrej = img("IIIB6/SedlakOndrej.png")
-SeluckaBarbora = img("IIIB6/SeluckaBarbora.png")
-SmekalMartin = img("IIIB6/SmekalMartin.png")
-SowaJakub = img("IIIB6/SowaJakub.png")
-SpacekJakub = img("IIIB6/SpacekJakub.png")
-SpertlikvoaVeronika = img("IIIB6/SpertlikvoaVeronika.png")
-TelcovaKlara = img("IIIB6/TelcovaKlara.png")
-ValentaAdam = img("IIIB6/ValentaAdam.png")
-VranovaMarina = img("IIIB6/VranovaMarina.png")
-VyslouzilovaElena = img("IIIB6/VyslouzilovaElena.png")
-ZizlavskaAmelie = img("IIIB6/ZizlavskaAmelie.png")
-known_face_encodings = [BognarovaJulie, CvetanRobert, CvrckovaEliska, HamplovaAnna, HanykTomas, HejdukovaLeona, HrdlickaAdam, JarosovaAdriana, KorinkovaTana, LatalovaNatalie, MistaMatous, NovotnaAgata, PiechovaJulie, PisoftovaEva, PivodovaKaterina, RuzickovaEma, SedlakOndrej, SeluckaBarbora, SmekalMartin, SowaJakub, SpacekJakub, SpertlikvoaVeronika, TelcovaKlara, ValentaAdam, VranovaMarina, VyslouzilovaElena, ZizlavskaAmelie]
-known_face_names = ['BognarovaJulie', 'CvetanRobert', 'CvrckovaEliska', 'HamplovaAnna', 'HanykTomas', 'HejdukovaLeona', 'HrdlickaAdam', 'JarosovaAdriana', 'KorinkovaTana', 'LatalovaNatalie', 'MistaMatous', 'NovotnaAgata', 'PiechovaJulie', 'PisoftovaEva', 'PivodovaKaterina', 'RuzickovaEma', 'SedlakOndrej', 'SeluckaBarbora', 'SmekalMartin', 'SowaJakub', 'SpacekJakub', 'SpertlikvoaVeronika', 'TelcovaKlara', 'ValentaAdam', 'VranovaMarina', 'VyslouzilovaElena', 'ZizlavskaAmelie']
+total_faces = 11
+camera = 0
+video_capture = cv2.VideoCapture(camera, cv2.CAP_DSHOW)
+time.sleep(1)
+video_capture.release()
 
 
 
@@ -111,7 +62,24 @@ known_face_names = ['BognarovaJulie', 'CvetanRobert', 'CvrckovaEliska', 'Hamplov
 
 
 
-
+IB8KlimcakRichard = img("faces/IB8KlimcakRichard.png")
+IB8LinekOndrej = img("faces/IB8LinekOndrej.png")
+IB8OndrouskovaTereza = img("faces/IB8OndrouskovaTereza.png")
+IB8ZavadilTomas = img("faces/IB8ZavadilTomas.png")
+IIA6DolezalovaElla = img("faces/IIA6DolezalovaElla.png")
+IIA8ProtivanekVojtech = img("faces/IIA8ProtivanekVojtech.png")
+IIA8ZubakSamuel = img("faces/IIA8ZubakSamuel.png")
+IIIA8HolasekTomas = img("faces/IIIA8HolasekTomas.png")
+IIIA8HrabalNikola = img("faces/IIIA8HrabalNikola.png")
+IIIA8JanosikLukas = img("faces/IIIA8JanosikLukas.png")
+IIIA8StavarskyRichard = img("faces/IIIA8StavarskyRichard.png")
+IVA8BrozdaAdam = img("faces/IVA8BrozdaAdam.png")
+IVA8KaresVit = img("faces/IVA8KaresVit.png")
+IVA8ProchazkaJosef = img("faces/IVA8ProchazkaJosef.png")
+IVA8ProchazkovaAnezka = img("faces/IVA8ProchazkovaAnezka.png")
+KvapilMaFyHv = img("faces/KvapilMaFyHv.jpg")
+known_face_encodings = [IB8KlimcakRichard, IB8LinekOndrej, IB8OndrouskovaTereza, IB8ZavadilTomas, IIA6DolezalovaElla, IIA8ProtivanekVojtech, IIA8ZubakSamuel, IIIA8HolasekTomas, IIIA8HrabalNikola, IIIA8JanosikLukas, IIIA8StavarskyRichard, IVA8BrozdaAdam, IVA8KaresVit, IVA8ProchazkaJosef, IVA8ProchazkovaAnezka, KvapilMaFyHv]
+known_face_names = ['IB8KlimcakRichard', 'IB8LinekOndrej', 'IB8OndrouskovaTereza', 'IB8ZavadilTomas', 'IIA6DolezalovaElla', 'IIA8ProtivanekVojtech', 'IIA8ZubakSamuel', 'IIIA8HolasekTomas', 'IIIA8HrabalNikola', 'IIIA8JanosikLukas', 'IIIA8StavarskyRichard', 'IVA8BrozdaAdam', 'IVA8KaresVit', 'IVA8ProchazkaJosef', 'IVA8ProchazkovaAnezka', 'KvapilMaFyHv']
 
 
 
@@ -125,6 +93,26 @@ known_face_names = ['BognarovaJulie', 'CvetanRobert', 'CvrckovaEliska', 'Hamplov
 
 print("pictures loaded")
 print(time.time() - Start)
+
+# for a in range(10):
+#     print("trying", a)
+#     video_capture = cv2.VideoCapture(a, cv2.CAP_DSHOW)
+#     reat, frame = video_capture.read()
+#     print(ret)
+#     if ret == True:
+#         break
+#     else:
+#         video_capture.release()
+video_capture = cv2.VideoCapture(camera, cv2.CAP_DSHOW)
+video_capture.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
+video_capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+# video_capture = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+
+
+
+
+print("video captured")
+# print(video_capture)
 # Initialize some variables
 multipl = 2
 resize = 1 / multipl
@@ -138,7 +126,7 @@ while True:
     loop_noob = loop_noob + 1
     # Grab a single frame of video
     ret, frame = video_capture.read()
-    frame = cv2.resize(frame, (960, 540))
+    # frame = cv2.resize(frame, (960, 540))
     print(ret, loop_noob)
 
     # Resize frame of video to 1/4 size for faster face recognition processing
