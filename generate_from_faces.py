@@ -12,12 +12,13 @@ Files = os.listdir(where)
 Names = []
 Out = ""
 loop = 0
+Out = Out + "total_faces = {}".format(len(Files)) + "\n" + "act_face = 0" + "\n"
 
 for File in tqdm(Files) :
     loop = loop + 1
     # print(len(File))
     # if trida_f in File:
-    if len(File) < 10:
+    if len(File) < 11:
         # print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
         continue
     if "X" in File:
