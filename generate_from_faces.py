@@ -57,7 +57,7 @@ known_fe = known_fe.replace("'", "")
 # print(known_fn)
 
 final = Out + "\n" + known_fe + "\n" + known_fn
-print(final)
+# print(final)
 pyperclip.copy(final)
 
-print(loop - 1)
+# print(loop - 1)

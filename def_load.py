@@ -12,9 +12,9 @@ def img(where):
     # print(image)
     
     face_encoding = face_recognition.face_encodings(image)
-    if str(face_encoding) == "[]":
-        print("NO FINDABLE FACES!!!")
-    # face_encoding = face_encoding[0]
-    # print(face_encoding)
-
+    print(face_encoding)
+    # if str(face_encoding) == "[]" or face_encoding == None:
+    #     print("NO FINDABLE FACES!!!")
+    # # else:
     return face_encoding [0]
+    
