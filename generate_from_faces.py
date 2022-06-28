@@ -1,6 +1,7 @@
 import os
 import pyperclip
 import time
+from tqdm import tqdm
 
 Sleep = 1
 trida = "faces"
@@ -12,7 +13,7 @@ Names = []
 Out = ""
 loop = 0
 
-for File in Files:
+for File in tqdm(Files) :
     loop = loop + 1
     # print(len(File))
     # if trida_f in File:
