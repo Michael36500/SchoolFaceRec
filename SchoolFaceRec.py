@@ -51,7 +51,7 @@ print("GO!")
 
 # Load a sample picture and learn how to recognize it.
 total_faces = 11
-camera = 0
+camera = 2
 video_capture = cv2.VideoCapture(camera, cv2.CAP_DSHOW)
 time.sleep(1)
 video_capture.release()
@@ -117,6 +117,9 @@ while True:
     loop_noob = loop_noob + 1
     # Grab a single frame of video
     ret, frame = video_capture.read()
+    if "None" in str(frame):
+        print("dont have frame, skiping it")
+        continue
     # frame = cv2.resize(frame, (960, 540))
     print(ret, loop_noob)
 
