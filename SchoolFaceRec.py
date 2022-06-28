@@ -50,43 +50,12 @@ def time_convert(sec):
 print("GO!")
 
 # Load a sample picture and learn how to recognize it.
-total_faces = 1023
 camera = 1
 video_capture = cv2.VideoCapture(camera, cv2.CAP_DSHOW)
 time.sleep(1)
 video_capture.release()
 
-
-
-total_faces = 1036
-act_face = 0
-
-total_faces = 1037
-act_face = 0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+total_faces = 1033
 
 
 
@@ -1080,8 +1049,6 @@ known_face_names = ['AbrahamovaTv', 'Adamikova2AjRuD', 'BednarikovaMaITV', 'Bera
 
 
 
-
-
 print("pictures loaded")
 print(time.time() - Start)
 
@@ -1125,11 +1092,14 @@ while True:
 
     # Resize frame of video to 1/4 size for faster face recognition processing
     # small_frame = cv2.resize(frame, (0, 0), fx=0.5, fy=0.5)
+    if "None" in str(frame):
+        print("frame = None, => skip")
+        continue
     small_frame = cv2.resize(frame, (0, 0), fx=resize, fy=resize)
     # small_frame = frame
 
-    # Convert the image from BGR color (which OpenCV uses) to RGB color (which face_recognition uses)
-    rgb_small_frame = small_frame[:, :, ::-1]
+    # Convert the image from BGR color (which OpenCV uses) to RGB color (which face_recognition uses
+    rgb_small_frame = cv2.cvtColor(small_frame, cv2.COLOR_BGR2RGB)
 
     # Only process every other frame of video to save time
     if process_this_frame:
@@ -1179,7 +1149,7 @@ while True:
         # Draw a label with a name below the face
         cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (255, 0, 0), cv2.FILLED)
         font = cv2.FONT_HERSHEY_DUPLEX
-        cv2.putText(frame, name, (left + 6, bottom - 6), font, 0.5, (255, 255, 255 ), 1)
+        cv2.putText(frame, name, (left + 6, bottom - 6), font, 1, (255, 255, 255 ), 1)
 
     # Display the resulting image
     cv2.imshow('Video', frame)
