@@ -35,8 +35,8 @@ for File in tqdm(Files) :
     Full = '{} = img("{}")'.format(Name, Path)
 
     Out = Out + "\n" + Full
-    if loop > 10:
-        break
+    # if loop > 10:
+    #     break
 # pyperclip.copy(Out)
 # time.sleep(Sleep)
 # print(Out)
