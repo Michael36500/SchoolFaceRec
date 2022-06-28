@@ -105,9 +105,9 @@ video_capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
 print("video captured")
 # print(video_capture)
 # Initialize some variables
-multipl = 2
+multipl = 1
 resize = 1 / multipl
-face_locations = []
+face_locations = [] 
 face_encodings = []
 face_names = []
 process_this_frame = True
