@@ -50,11 +50,6 @@ def time_convert(sec):
 print("GO!")
 
 # Load a sample picture and learn how to recognize it.
-camera = 2 
-video_capture = cv2.VideoCapture(camera, cv2.CAP_DSHOW)
-time.sleep(1)
-video_capture.release()
-
 total_faces = 1033
 
 
@@ -1044,25 +1039,8 @@ known_face_names = ['AbrahamovaTv', 'Adamikova2AjRuD', 'BednarikovaMaITV', 'Bera
 print("pictures loaded")
 print(time.time() - Start)
 
-# for a in range(10):
-#     print("trying", a)
-#     video_capture = cv2.VideoCapture(a, cv2.CAP_DSHOW)
-#     reat, frame = video_capture.read()
-#     print(ret)
-#     if ret == True:
-#         break
-#     else:
-#         video_capture.release()
-video_capture = cv2.VideoCapture(camera, cv2.CAP_DSHOW)
-video_capture.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
-video_capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
-# video_capture = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
 
-
-
-print("video captured")
-# print(video_capture)
 # Initialize some variables
 multipl = 1
 resize = 1 / multipl
@@ -1075,12 +1053,12 @@ loop_noob = 0
 while True:
     loop_noob = loop_noob + 1
     # Grab a single frame of video
-    ret, frame = video_capture.read()
+    frame = cv2.imread("")
     if "None" in str(frame):
         print("dont have frame, skiping it")
         continue
     # frame = cv2.resize(frame, (960, 540))
-    print(ret, loop_noob)
+    print(loop_noob)
 
     # Resize frame of video to 1/4 size for faster face recognition processing
     # small_frame = cv2.resize(frame, (0, 0), fx=0.5, fy=0.5)
