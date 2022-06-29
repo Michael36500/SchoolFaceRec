@@ -20,7 +20,7 @@ def crop_faces(trida):
     face_locations = face_recognition.face_locations(img_rgb)
     # print("after")
     lpnb = 0
-    for top, right, bottom, left in tqdm(face_locations):
+    for top, right, bottom, left in face_locations:
         lpnb = lpnb + 1
         # Draw a box around the face
         #cv2.rectangle(img, (left, top), (right, bottom), (0, 0, 255), 2)
@@ -72,7 +72,7 @@ def crop_faces(trida):
 #     crop_faces(short)
 # crop_faces("IB6")
 
-inputs_jpg = os.listdir("skeny/")
+inputs_jpg = os.listdir("zskeny/")
 inputs = []
 for a in tqdm(inputs_jpg):
     l = len(a)
