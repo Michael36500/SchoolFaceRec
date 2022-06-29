@@ -4,7 +4,7 @@ import time
 from tqdm import tqdm
 
 Sleep = 1
-trida = "faces"
+trida = "known"
 trida_f = trida + ".png"
 where = trida + "/"
 
