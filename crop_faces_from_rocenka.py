@@ -3,6 +3,7 @@ import cv2
 from tqdm import tqdm
 import os
 def crop_faces(trida):
+    # os.mkdir(trida)
     # trida = "IA6"
     print(trida)
     # os.makedirs(trida, exist_ok=True)
